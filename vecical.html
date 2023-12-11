@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen" id="screen1">
+        <div class="wraper">
+            <h3>User Registeration</h3>
+
+            <input type="text" placeholder="Enter User Name...." id="inpName"><br>
+            <input type="text" placeholder="Enter User Contect Nunber...." id="inpContect"><br>
+
+            <select name="" id="gender-box"  class="select-box">
+                <option value="" selected disabled>---Select gender:--</option>
+                <option value="male">Male:</option>
+                <option value="male">Female:</option>
+            </select><br>
+
+
+            <select name="" id="type-box" class="select-box">
+                <option value="" selected disabled>---Select Type:--</option>
+                <option value="student">Student:</option>
+                <option value="male">Teacher:</option>
+            </select><br>
+
+            <button class="btn" id="btn1">Register</button>
+            <button class="btn" id="cheekValidity">Cheek Validity</button>
+            
+
+        </div>
+
+    </div>
+
+
+    <div class="screen" id="screen2">
+        <div class="wraper">
+            <h3>Vehicle Registeration</h3>
+
+            <input type="text" placeholder="Enter Vehicle Number....RJ14QH2564" id="inpVicleNo"><br>
+
+            <select name="" id="vicheltype-box" class="select-box" >
+                <option value="" selected disabled>---Select Vehicle-type:--</option>
+                <option value="car">Car:</option>
+                <option value="moter-cycle">Moter-cycle:</option>
+            </select><br>
+
+            <button class="btn" id="btn2">Add</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="screen" id="screen3">
+        <div class="wraper" id="wraper2">
+            <h3>Pass Choise</h3>
+            <div id="btnwraper">
+                <input type="button" value="Daily-10 rs" class="btnsame">
+                <input type="button" value="Monthly-100 rs" class="btnsame">
+                <input type="button" value="Yearly-1000 rs" class="btnsame">
+            </div>
+
+            <button class="btn" id="btn3">Add</button>
+
+        </div>
+
+    </div>
+
+    <div id="screen4">
+        <h1>Pass</h1>
+
+        <div id="screen4-wraper">
+
+
+            <div class="deatils">
+                <p id="owner-name"></p>
+                <p id="vichel-id"></p>
+                <p id="Registeration-id"></p>
+                <p id="Vehicle-no"></p>
+                <p id="expiry-date"></p>
+            </div>
+
+            <div class="qrCode">
+                <img src="" alt="" id="qrimg">
+            
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="screen" id="screen5">
+
+        <input type="text"  id="num1" placeholder="Place Enter Registeration Id ">
+        <button id="btn4" class="btn">submit</button>
+        <div class="showResult"></div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

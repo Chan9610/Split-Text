@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Api</title>
+</head>
+<body>
+    <h1>Promise API</h1>
+</body>
+</html>
+<script>
+    let p1 = new Promise((resolve,reject)=>{
+        console.log("First msg");
+        resolve(101);
+    });
+
+    let p2 = new Promise((resolve,reject)=>{
+        console.log("Second msg");
+        resolve(101);
+    });
+
+    let p3 = new Promise((resolve,reject)=>{
+        console.log("Third msg");
+        resolve(101);
+    });
+    let pro_all = Promise.allSettled([p1,p2,p3]);
+
+    pro_all.then((value)=>{
+        console.log(value);
+    })
+</script>

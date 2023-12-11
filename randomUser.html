@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+</head>
+<body>
+    <div id="wrapper">
+        <button>Get Random Data</button>
+        <img src="" alt="">
+    </div>
+
+
+    <script>
+
+        //Promise: is an object which tells us the state of an asynchronous operation ,ie.e of an operation which is not over yet, and returns the result of that operation
+
+
+       const btn = document.querySelector("button")
+    //    btn.onclick = () => {
+    //     fetch("https://randomuser.me/api")
+    //     .then((response) => {return response.json()})
+    //     .then((result) => {console.log(result); showResults(result)})
+    //     .catch((error) => {console.log(error)})
+    //    }
+
+
+
+    btn.onclick = () => {
+        fetchData()
+    }
+
+    async function fetchData(){
+        const response = await fetch("https://randomuser.me/api")
+        const result = await response.json()
+        showResults(result)
+    }
+
+
+
+       function showResults(result){
+        const img = document.querySelector("img")
+        img.src = result.results[0].picture.large
+        document.querySelector("#wrapper").append(img)
+       }
+
+    </script>
+</body>
+</html>

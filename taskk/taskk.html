@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Splitter</title>
+</head>
+<body>
+
+<div class="box">
+    <input id="text" type="text">
+    <input id="divnum" type="number">
+    <button id="submit" onclick="splitText()">Submit</button>
+</div>
+
+<script>
+function splitText() {
+   
+    var inputText = document.getElementById('text').value;
+    var divNum = parseInt(document.getElementById('divnum').value);
+
+    var textChunks = [];
+    for (var i = 0; i < inputText.length; i += divNum) {
+        var chunk = '';
+        for (var j = 0; j < divNum && i + j < inputText.length; j++) {
+            chunk += inputText[i + j];
+        }
+        textChunks.push(chunk);
+    }
+  
+    document.write(JSON.stringify(textChunks))
+    
+
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

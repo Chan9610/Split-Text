@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    const data=[
+        {name:"chandan", Prof:"webdev"},
+        {name:"sudhir", Prof:"webdev"}
+    ]
+    function getdata(){
+        setTimeout(() => {
+            let output =""
+            data.forEach((data,index)=>{
+
+                output+=`<li>${data.name}</li>`;
+                document.body.innerHTML=output
+            })
+            
+        }, 2000);
+    }
+    
+
+    function createdata(newdata){
+     setTimeout(() => {
+        data.push(newdata)
+        
+     }, 2000);
+    }
+    getdata();
+    createdata({name:"yash",Prof:"webdev"})
+
+
+</script>

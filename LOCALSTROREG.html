@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Please Provide User Details</h1>
+    <form action="">
+        <input type="text" placeholder="Enter your Name" id="inp1">
+        <input type="text" placeholder="Enter Your Age" id="inp2">
+        <input type="text" placeholder="Enter Mobile Number" id="inp3">
+        <input type="email" placeholder="Enter Your Email" id="inp4">
+        <input type="button" value="Submit" id="btn">
+    </form>
+
+    <p id="userNames"></p>
+
+    
+
+
+
+   
+       
+
+</body>
+
+</html>
+<script>
+    
+
+const name = document.getElementById("inp1");
+const age = document.getElementById("inp2");
+const mobile = document.getElementById("inp3");
+const mail = document.getElementById("inp4");
+const button = document.getElementById("btn");
+const userNamesParagraph = document.getElementById("userNames");
+
+button.onclick = () => {
+    const info = {
+        name: name.value,
+        age: age.value,
+        Contact: mobile.value,
+        Email: mail.value
+    };
+   
+    let userDetails = localStorage.getItem("UserInfo");
+    let setData = userDetails ? JSON.parse(userDetails) : [];
+    setData.push(info);
+    let ans = JSON.stringify(setData);
+    console.log(setData);
+    window.localStorage.setItem("UserInfo", ans);
+
+     // Retrieve user names and display them
+let infos = localStorage.getItem("UserInfo");
+if (infos) {
+    let userData = JSON.parse(infos);
+    let userNames = userData.map(user => user.name).join(", ");
+    userNamesParagraph.textContent = "Names: " + userNames;
+}
+};
+
+</script>
+</script>
+</script>
+</script>
+</script>

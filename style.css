@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.screen{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./dark-background-abstract-background-network-3d-background-5120x2880-8324.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    /* background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000); */
+
+    
+    
+}
+#screen2{
+    display: none;
+}
+#screen3{
+    display: none;
+}
+#screen4{
+    display: none;
+}
+#screen5{
+    display: none;
+}
+
+.wraper{
+    height: 450px;
+    width: 60%;
+    background-color: rgba(127, 184, 203, 0.393);
+    margin: auto;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.wraper h3{
+    text-align: center;
+    margin: 10px;
+}
+input{
+    height: 40px;
+    width: 95%;
+    outline: none;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+.select-box{
+    height: 40px;
+    width: 95%;
+    margin: 10px;
+}
+.btn{
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(9, 9, 9);
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+#btnwraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnsame{
+    height: 100px;
+    width: 300px;
+    margin: 5px;
+    font-size: 18px;
+}
+.btnsame:hover{
+    background-color: rgb(148, 147, 198);
+    color: white;
+}
+#wraper2{
+    height: 270px;
+}
+#screen4{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(141, 128, 153);
+   
+}
+h1{
+    text-align: center;
+    
+}
+#screen4-wraper{
+    height:170px;
+    width: 70%;
+    background-color: white;
+    margin:auto;
+    /* padding: 10px; */
+    display: flex;
+    margin-top: 20px;
+    border: 2px solid black;
+
+   
+}
+.deatils{
+    height: 100%;
+    width: 70%;
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    padding: 10px;
+    line-height: 24px;
+
+}
+.qrCode{
+    height: 100%;
+    width: 30%;
+    border-left: 2px dotted black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#num1{
+    height: 50px;
+    width: 300px;
+}
+.showResult{
+    min-height: 100px;
+    width: 300px;
+    color: white;
+    background-color: rgb(109, 109, 171);
+    position: absolute;
+    top:60%;
+    right:45%;
+    padding: 10px;
+    line-height: 20px;
+    display: none;
+}
